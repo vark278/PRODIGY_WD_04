@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="#css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav style="background-color: #337ab7;">
+        <ul>
+            <li><a href="#home" style="color: #ffffff;">Home</a></li>
+            <li><a href="#about" style="color: #ffffff;">About</a></li>
+            <li><a href="#projects" style="color: #ffffff;">Projects</a></li>
+            <li><a href="#contact" style="color: #ffffff;">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" style="background-color: #337ab7;">
+        <h1 style="color: #ffffff;">Welcome to my Portfolio!</h1>
+        <p style="color: #ffffff;">I'm Varada Kulkarni, a passionate Web developer and designer.</p>
+        <button style="background-color: #ffffff; color: #337ab7;">Learn More</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" style="background-color: #d9edf7;">
+        <img src="C:\Users\rrk61\OneDrive\Desktop\pp.jpg" alt="Your Image" style="display: block; margin: 0 auto 20px; width: 200px;">
+        <h2 style="color: #337ab7;">About Me</h2>
+        <p>An engineering student specializing in Information Technology with a strong passion for teamwork and effective communication. My adaptability, motivation, and love for challenges drive me to excel in my pursuits. I am deeply committed to achieving my goals with excellence. I believe my expertise and accomplishments can bring value to your team and contribute to your growth and success. I would welcome the opportunity to connect and discuss how I can make a positive impact.</p>
+        <h3 style="color: #337ab7;">Education</h3>
+        <p style="color: #333;">Bachelor of Technology in Information Technology<br>Shri Ramdeobaba College Of Engineering and Management, 2022 - 2026</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" style="background-color: #d9edf7;">
+        <h2 style="color: #337ab7;">My Projects</h2>
+        <ul>
+            <li>
+                <h3>Tic Tac Toe</h3>
+                <p>The Tic Tac Toe web application allows users to play the classic game against either another player or an AI opponent. The interface provides a grid-based game board where players take turns placing their respective markers (X or O) in empty squares. The game dynamically updates to indicate whose turn it is and displays a message when the game is won or ends in a draw.<br>
+
+Key Features:<br>
+
+Grid-Based Game Board: The game board consists of a 3x3 grid where players can place their markers.<br>
+Player vs. Player Mode: Users can choose to play against another player, taking turns placing X and O markers.<br>
+Player vs. AI Mode: Users can choose to play against an AI opponent, with the AI making random moves as the O player.<br>
+Dynamic Message Display: The application displays messages indicating whose turn it is, who wins, or when the game ends in a draw.<br>
+Reset Button: Users can reset the game at any time to start a new round or switch between player modes.<br>
+Overall, the Tic Tac Toe application provides an interactive and engaging experience for users to enjoy the classic game either against a friend or challenging an AI opponent.</p>
+                <img src="C:\Users\rrk61\OneDrive\Desktop\pp2.png" alt="Project 1" style="display: block; margin: 0 auto 20px; width: 300px;">
+            </li>
+            <li>
+                <h3>Stopwatch</h3>
+                <p>The Stopwatch is a simple web application that allows users to measure elapsed time. It provides basic functionality such as starting, pausing, and resetting the timer. The interface displays the elapsed time in hours, minutes, seconds, and milliseconds, updating in real-time as the timer runs.<br>
+
+Key Features:<br>
+
+Start Button: Initiates the stopwatch timer when clicked, displaying the elapsed time since it was started.<br>
+Pause Button: Halts the stopwatch timer when clicked, allowing users to resume from where they left off.<br>
+Reset Button: Resets the stopwatch timer and sets the elapsed time back to zero when clicked.<br>
+Real-time Updates: The elapsed time is displayed in real-time, updating every 10 milliseconds to provide accurate measurements.<br>
+Responsive Design: The interface is designed to be responsive and user-friendly, with clear buttons and a visually appealing layout.<br>
+Overall, the Stopwatch application offers a convenient tool for users to track time intervals for various purposes, such as timing exercises, tasks, or events.
+
+
+
+
+
+
+</p>
+                <img src="C:\Users\rrk61\OneDrive\Pictures\Screenshots\PP3.png" alt="Project 2" style="display: block; margin: 0 auto 20px; width: 300px;">
+            </li>
+            <!-- Add more projects here -->
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="background-color: #d9edf7;">
+        <h2 style="color: #337ab7;">Get in Touch</h2>
+        <p style="color: #333;">Feel free to reach out to me at <a href="vark278@gmail.com" style="color: #337ab7;">vark278@gmail.com</a> or through my social media profiles.</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/varada-kulkarni-b3395a258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" style="color: #337ab7;">LinkedIn</a></li>
+            <li><a href="https://github.com/vark278" target="_blank" style="color: #337ab7;">GitHub</a></li>
+            <!-- Add more social media profiles here -->
+        </ul>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // Add event listeners to navigation links
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', event => {
+                event.preventDefault();
+                document.querySelector(event.target.hash).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+
+    <!-- CSS -->
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #E8E9EB;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav li {
+            margin-right: 20px;
+        }
+        nav a {
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: #23527c;
+        }
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #337ab7;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #337ab7;
+        }
+        button {
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #23527c;
+            color: #fff;
+        }
+        /* Add more styles as needed */
+    </style>
+</body>
+</html>
